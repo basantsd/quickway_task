@@ -13,7 +13,7 @@ This guide provides step-by-step instructions to set up and run this project, wh
 Make sure you have the following installed on your system:
 
 - **PHP >= 8.1**
-- **Laravel >= 10.0**
+- **Laravel = 10.0**
 - **Composer**
 - **Node.js and npm**
 - **MySQL or other supported database**
@@ -29,7 +29,7 @@ git clone <repository-url>
 cd <project-directory>
 ```
 
-### 2. Install Laravel Dependencies
+### 2. Install Laravel Dependencies (optional if livewire not work)
 Install the required PHP dependencies using Composer:
 ```bash
 composer install
