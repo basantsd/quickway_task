@@ -29,7 +29,7 @@ git clone <repository-url>
 cd <project-directory>
 ```
 
-### 2. Install Laravel Dependencies (optional if livewire not work)
+### 2. Install Laravel Dependencies 
 Install the required PHP dependencies using Composer:
 ```bash
 composer install
@@ -72,7 +72,7 @@ php artisan db:seed --class=AdminSeeder
 php artisan db:seed --class=TaskSeeder
 ```
 
-## Publish Livewire Assets
+## Publish Livewire Assets (optional if livewire not work)
 ```bash
 php artisan livewire:publish
 ```
