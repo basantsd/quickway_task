@@ -61,20 +61,6 @@ Set up the database schema by running migrations:
 php artisan migrate
 ```
 
-## Laravel Breeze Authentication Setup
-
-Install Breeze scaffolding with Blade:
-```bash
-php artisan breeze:install blade
-```
-Install and build the frontend assets:
-```bash
-npm install
-```
-Run the migrations to set up the authentication tables:
-```bash
-php artisan migrate
-```
 
 ## Database Seeding
 
