@@ -41,7 +41,7 @@ function TaskDashboard() {
             return;
         }
         try {
-            const response = await axios.post('/api/tasks', newTask, {
+            const response = await axios.post('/api/tasks/add', newTask, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
             });
             setTasks([response.data, ...tasks]); 
