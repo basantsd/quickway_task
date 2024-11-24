@@ -8,7 +8,7 @@ This guide provides step-by-step instructions to set up and run this project, wh
 
 ---
 
-## Prerequisites
+## 📝 Prerequisites
 
 Make sure you have the following installed on your system:
 
@@ -20,7 +20,7 @@ Make sure you have the following installed on your system:
 
 ---
 
-## Installation and Setup
+## ⚒️ Installation and Setup
 
 ### 1. Clone the Repository
 
@@ -62,7 +62,7 @@ php artisan migrate
 ```
 
 
-## Database Seeding
+## 📊 Database Seeding
 
 ### Run the Admin & Task Seeder
 
@@ -77,17 +77,42 @@ php artisan db:seed --class=TaskSeeder
 php artisan livewire:publish
 ```
 
-## Run Server
+## ⌛️ Run Server
 ```bash
 php artisan serve
 ```
 
-## Admin Login By Admin Seeder
+## 🧑🏻‍💻 Admin Login By Admin Seeder
 - **User : admin@gmail.com**
 - **Password : 12345678**
 
-## For Other User Login 
+## 🧑🏻‍💻 For Other User Login 
 - **User : example@mail.com**
 - **Password : password**
 
 Use User mail ID and password are **'password'** for all seeder users.
+
+
+## 🧪 Test Functionalities
+```
+cp .env.example .env.testing
+```
+### Generate Application Key
+```bash
+php artisan key:generate
+```
+### Change Database to sqlite
+```
+DB_CONNECTION=sqlite
+DB_DATABASE=:memory:
+```
+
+Run the following command to create the test database:
+```
+php artisan migrate --env=testing
+```
+
+Run all tests using the PHPUnit test runner:
+```
+php artisan test
+```
